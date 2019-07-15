@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="extensions" value="*.xls" />
+    <add key="tendersToRead" value="CASH,DEBIT,MASTERCARD,VISA" />
+    <add key="XeroCertificatePath" value="D:\Projects\Westcoast Floral\XeroCert\XeroKey.pfx" />
+    <add key="XeroCertificatePassword" value="floralwest" />
+    <add key="XeroKey" value="A01HVM82SY2NIRPDVOLKGEXW3HZ2BL" />
+    <add key="XeroSecret" value="1FRKWVHJRJTVXZNNN6ZEEYPQPFPJRK" />
+    <add key="XeroContactId" value="671c59a7-5598-409e-82a8-21ba03e26820" />
+    <add key="XeroRetailAccountCode" value="4300" />
+    <add key="XeroCoffeeShopAccountCode" value="4600" />
+    <add key="XeroTaxType" value="NONE" />
+  </appSettings>
+  <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-12.0.0.0" newVersion="12.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>
