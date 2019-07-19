@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="extensions" value="*.xls"/>
+    <add key="tendersToRead" value="CASH,DEBIT,MASTERCARD,VISA"/>
+    <add key="XeroCertificateFilename" value="XeroKey.pfx"/>
+    <add key="XeroCertificatePassword" value="floralwest"/>
+    <add key="XeroKey" value="YQKJUIMR2LHN9AEEYLQGLLCAGPIRTM"/>
+    <add key="XeroSecret" value="MGR2BGVGBH74ESWZKBIFYA4EI2O0MK"/>
+    <add key="XeroContactId" value="f92d780d-3868-4baa-903a-8a9f1e6ce289"/>
+    <add key="XeroRetailAccountCode" value="4300"/>
+    <add key="XeroCoffeeShopAccountCode" value="4600"/>
+    <add key="XeroTaxType" value="NONE"/>
+    <add key="XeroOptionName" value="Department"/>
+    <add key="XeroOptionValue" value="RETAIL"/>
+    <add key="ClientSettingsProvider.ServiceUri" value=""/>
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1"/>
+  </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-12.0.0.0" newVersion="12.0.0.0"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri=""/>
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400"/>
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>
